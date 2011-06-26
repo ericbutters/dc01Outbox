@@ -1,0 +1,10 @@
+#header {
+  background-color: $main-color;
+  color: #FFF;
+  padding: 4px 100px;
+  border-bottom: solid 5px darken($main-color, 10%);
+
+  h1 {
+    font-size: 30px;
+  }
+}

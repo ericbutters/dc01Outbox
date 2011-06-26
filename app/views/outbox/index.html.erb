@@ -1,0 +1,24 @@
+<div id="header">Send a message</div>
+
+<div id="xxx">
+<%= form_tag :controller => "outbox", :action => "send_mail", :method => "post" do %>
+<table>
+  <tr>
+    <td align="right">To:</td>
+    <td><%= text_field_tag(:receiveraddr) %></td>
+  </tr>
+    <tr>
+    <td align="right">Subject:</td>
+    <td><div id="h2"><%= text_field_tag(:subject) %></div></td>
+  </tr>
+    <tr>
+    <td></td>
+    <td><%= text_area_tag(:message) %></td>
+  </tr>
+    <tr>
+    <td></td>
+    <td><%= submit_tag("Send") %></td>
+  </tr>
+</table>
+<% end %>
+</div>

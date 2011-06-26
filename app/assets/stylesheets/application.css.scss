@@ -1,0 +1,130 @@
+$main-color: #1E7B12;
+
+blue_b {
+  color: #00b3ee;
+  font-weight: bold;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 18px; }
+  
+input {
+  color: #00b3ee;
+  font-size: 25px;
+  background-color: #0f0f0f;
+  border-radius: 5px;
+  border: 0px;
+}
+
+textarea {
+  font-size: 25px;
+  background-color: #0f0f0f;
+  border-radius: 5px;
+  border: 0px;
+}
+
+#header {
+  margin: 0;
+  color: #fff;
+  background-position: 0 0;
+  background-color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+}
+  
+#xxx {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 10px;
+
+  input {
+    color: #fff;
+    font-size: 15px;
+    background-color: #0f0f0f;
+    border-radius: 5px;
+    border: 0px}
+
+  #h2 {
+    input {
+      width: 403px;
+      color: #00b3ee;
+      font-size: 25px;
+      font-weight: bold;
+      background-color: #0f0f0f;
+      border-radius: 5px;
+      border: 0px; }
+  }
+
+  textarea {
+    width: 400px;
+    height:200px;
+    font-family: verdana;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #0f0f0f;
+    border-radius: 5px;
+    border: 0px;
+  }
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #000;
+  &:visited {
+    color: #666; }
+  &:hover {
+    color: #fff;
+    background-color: #000; } }
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px; } }
+
+#notice {
+  color: green; }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; }
+  ul li {
+    font-size: 12px;
+    list-style: square; } }
