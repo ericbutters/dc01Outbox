@@ -12,13 +12,6 @@ body {
   font-size: 12px;
   line-height: 18px; }
   
-input {
-  color: #00b3ee;
-  font-size: 25px;
-  background-color: #0f0f0f;
-  border-radius: 5px;
-  border: 0px;
-}
 
 textarea {
   font-size: 25px;
@@ -47,7 +40,16 @@ textarea {
   padding-bottom: 10px;
   color: #fff;
   background-color: #000;
-  border-radius: 10px;
+  border-radius: 10px;  
+
+  select {
+    color: #000;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 0px;    
+    margin-bottom: 8px;
+  }
 
   input {
     color: #fff;
@@ -56,7 +58,7 @@ textarea {
     border-radius: 5px;
     border: 0px}
 
-  #h2 {
+  #h2 {    
     input {
       width: 403px;
       color: #00b3ee;
