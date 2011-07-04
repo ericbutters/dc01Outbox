@@ -6,6 +6,7 @@ gem 'sprockets', '= 2.0.0.beta.10'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
+gem 'twitter'
 
 # Asset template engines
 gem 'json'

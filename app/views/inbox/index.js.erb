@@ -1,0 +1,3 @@
+<% if @nummails > 0  %> 
+$("#xxx").prepend("<%= escape_javascript(render(:partial => 'messages')) %>");
+<% end %>

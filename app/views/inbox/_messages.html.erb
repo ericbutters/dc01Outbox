@@ -1,0 +1,22 @@
+<div id="themail">
+<table>
+<% @email.each do |m| %>
+  <tr>
+    <td><%= m.date.strftime('%b %d, %Y at %I:%M %p') %></td>
+  </tr>
+  <tr>
+    <td>From: <%= m.from %>  To: <%= m.to %></td>
+  </tr>
+  <tr>
+    <td><%= link_to 'Reply', :controller => "outbox", :to => m.from %></td>
+  </tr>
+  <tr>
+    <td><h2><%= m.subject %></h2></td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td><%= m.body.decoded %></td>
+  </tr>
+<% end %>
+</table>
+</div>

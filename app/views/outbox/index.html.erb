@@ -4,8 +4,13 @@
 <%= form_tag :controller => "outbox", :action => "send_mail", :method => "post" do %>
 <table>
   <tr>
-    <td align="right">To:</td>
-    <td><%= select_tag(:userid, options_from_collection_for_select(@users, "id","name")) %></td>
+  <% if @to %>
+      <td align="right">To:</td>
+      <td><%= @to %><%= hidden_field_tag(:to, @to) %></td>    
+  <% else %>
+      <td align="right">To:</td>
+      <td><%= @to %><%= select_tag(:to, options_from_collection_for_select(@users, "email","name")) %></td>    
+  <% end %>      
   </tr>  
   <tr>
     <td align="right">Subject:</td>

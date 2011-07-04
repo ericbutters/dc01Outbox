@@ -9,14 +9,14 @@ class UserMailer < ActionMailer::Base
   :port => 587,
   :domain => "googlemail.com",
   :user_name => 'yourname@googlemail.com',
-  :password => 'yourpassword',
+  :password => 'yourpasswd',
   :authentication => 'plain',
  }
  default :from => 'yourname@googlemail.com',
          :return_path => 'yourname@googlemail.com'
 
-  def sendme(emailaddr,subject,message)
-    mail(:to => emailaddr,
+  def sendme(to,subject,message)
+    mail(:to => to,
          :subject => subject,
          :body => message)
   end

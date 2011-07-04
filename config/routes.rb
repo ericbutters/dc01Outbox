@@ -1,5 +1,7 @@
 Dc01Outbox::Application.routes.draw do
   resources :users
+  resources :inbox
+  resources :outbox
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
