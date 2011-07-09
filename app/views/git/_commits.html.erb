@@ -1,0 +1,15 @@
+<% @all.each do |c| %>
+<div id="thegit"> 
+  <table>  
+  <tr>
+    <td><%= c.id  %></td>
+  </tr>
+  <tr>
+    <td><%= c.author  %> on <%= c.authored_date  %></td>
+  </tr>
+   <tr>
+    <td><h2><%= c.message  %></h2></td>
+  </tr>  
+</table>
+</div>
+<% end %>

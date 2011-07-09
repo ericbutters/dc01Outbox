@@ -7,6 +7,7 @@ gem 'sprockets', '= 2.0.0.beta.10'
 
 gem 'mysql2'
 gem 'twitter'
+gem 'grit'
 
 # Asset template engines
 gem 'json'
