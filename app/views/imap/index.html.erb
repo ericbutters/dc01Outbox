@@ -1,0 +1,6 @@
+<div id="header">IMAP</div>
+
+<% @messages.each do |m| %>
+	From: <%= m[0] %> Subject: <%= m[1]  %><br />
+<% end%>
+
